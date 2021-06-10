@@ -10,21 +10,6 @@ func isAnagram(s string, t string) bool {
 		return false
 	}
 
-	//查找一个单词的每个字母是否在另一个单词中
-	//for i := 0; i<len(s); i++ {
-	//	s1 := s[i]
-	//	s_in_t := 0
-	//	for j := 0; j<len(t); j++ {
-	//		s2 := t[j]
-	//		if(s1==s2) {
-	//			s_in_t = 1
-	//		}
-	//	}
-	//	if(s_in_t==0) {
-	//		return false
-	//	}
-	//}
-
 	ms1 := make(map[byte]byte)
 	ms2 := make(map[byte]byte)
 
