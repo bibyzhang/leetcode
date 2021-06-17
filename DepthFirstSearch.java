@@ -23,10 +23,6 @@ public class DepthFirstSearch {
     }
 
     public static void DFSraverse(int s, int t) {
-//        Graph g = new Graph(v);
-//        System.out.print("123123213");
-//        System.out.print(g);
-//        Graph(8);6
         found = false;
         boolean[] visited = new boolean[vertex];//记录访问状态
         int[] prev = new int[vertex];//记录搜索路劲
@@ -66,24 +62,3 @@ public class DepthFirstSearch {
         System.out.print(t + " ");
     }
 }
-
-
-
-//public class DepthFirstSearch {
-//    public static void main(){
-//        DFSraverse(1, 8, 8);
-//    }
-//
-//    public static void DFSraverse(int s, int t, int v) {
-//        boolean[] visited = new boolean[v];//访问标识的数组,记录访问状态
-//
-//    }
-//
-//    public static void DFS(MGraph G, int i, [] visited) {
-//        int j;
-//        visited[i] = true;//记录当前节点为已访问
-//        for (j=0; j<; j++) {
-//
-//        }
-//    }
-//}
