@@ -19,29 +19,11 @@ public class Graph {
 
     /**
      * 无向图的一条边存两次
-     * @param s
-     * @param t
+     * @param s int 起始顶点
+     * @param t int 终止顶点
      */
     public void addEdge(int s, int t) {
         Adjacency[s].add(t);
         Adjacency[t].add(s);
     }
-
-//    public int bbbsize(int s) {
-//        return Adjacency[s].size;
-//    }
-
-//    public int link_size(int l) int {
-//        return Adjacency[l].size;
-//    }
-
-//    public int getLength() {
-//        int length = 0;
-//        Node tmpNode = this.headNode;
-//        while (tmpNode != null) {
-//            length++;
-//            tmpNode = tmpNode.next;
-//        }
-//        return length;
-//    }
 }

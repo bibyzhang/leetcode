@@ -2,24 +2,24 @@ import java.lang.System;
 
 public class DepthFirstSearch {
     private static int vertex; //顶点个数
-    private static Graph g;
+    private static Graph g;//图的存储
 
     static boolean found = false;
 
     public static void main(String[] args){
         vertex = 8;
         g = new Graph(vertex);
-        g.addEdge(1-1,2-1);
-        g.addEdge(1-1,4-1);
-        g.addEdge(2-1,5-1);
-        g.addEdge(2-1,3-1);
-        g.addEdge(3-1,6-1);
-        g.addEdge(4-1,5-1);
-        g.addEdge(5-1,6-1);
-        g.addEdge(5-1,7-1);
-        g.addEdge(6-1,8-1);
-        g.addEdge(7-1,8-1);
-        DFSraverse(1-1, 7-1);
+        g.addEdge(0,1);
+        g.addEdge(0,3);
+        g.addEdge(1,4);
+        g.addEdge(1,2);
+        g.addEdge(2,5);
+        g.addEdge(3,4);
+        g.addEdge(4,5);
+        g.addEdge(4,6);
+        g.addEdge(5,7);
+        g.addEdge(6,7);
+        DFSraverse(0, 6);
     }
 
     public static void DFSraverse(int s, int t) {
@@ -40,12 +40,7 @@ public class DepthFirstSearch {
             found = true;
             return;
         }
-//        System.out.print(g.Adjacency[0].size());
-//        System.out.print(g.bbbsize[0]);
-//        System.out.print(g.Adjacency[w].size);
-//        System.out.print(g.link_size(w));
-//        print(g.Adjacency[w], w, t);
-        //对每个顶点的链表进行遍历
+        //对每个顶点的链表进行遍历(邻接表存储方式，每个顶点存储指向顶点的链表，无向链表一个边要存储两次)
         for (int i=0; i<g.Adjacency[w].size(); ++i) {
             int q = g.Adjacency[w].get(i);
             if(!visited[q]) {

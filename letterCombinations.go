@@ -3,6 +3,7 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 )
@@ -194,5 +195,6 @@ func dfsLetter(letters_arr []string, setp map[string]int) []string {
 
 func main() {
 	digits := "6789"
-	letterCombinations(digits)
+	data := letterCombinations(digits)
+	fmt.Println("v%", data)
 }
