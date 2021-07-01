@@ -23,11 +23,11 @@ func bSearch(nums []int, low, high, target int) int {
 
 func main() {
 	//nums := []int{-1,0,3,5,9,12}
-	//nums := []int{1,2,3,4,5,6,7,8,9}
-	nums := []int{-1,0,3,5,9,12}
+	nums := []int{1,2,3,4,5,6,7,8,9}
+	//nums := []int{-1,0,3,5,9,12}
 	//target := 9
-	//target := 5
-	target := 2
+	target := 5
+	//target := 2
 	value := search(nums, target)
 	fmt.Println(value)
 }
