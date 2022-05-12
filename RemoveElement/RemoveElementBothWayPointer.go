@@ -23,7 +23,7 @@ func removeElement3(nums []int, val int) int {
 		//left等于right其实就是同个值了,不需要再覆盖
 		if left<right {
 			nums[left] = nums[right]
-			left++//从下一个开始村换
+			left++//从下一个开始循环
 			right--//循环到上一个即可
 		}
 	}
