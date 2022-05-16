@@ -1,11 +1,12 @@
 //https://leetcode.cn/problems/fibonacci-number/submissions/
+//dp方法
 
 package main
 
 import "fmt"
 
 func fib2(n int) int {
-	if n<2 {
+	if n < 2 {
 		return n
 	}
 
@@ -19,7 +20,7 @@ func fib2(n int) int {
 	return dp[n]
 }
 
-func main()  {
+func main() {
 	v := fib2(10)
 	fmt.Println(v)
 }
