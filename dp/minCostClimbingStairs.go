@@ -1,3 +1,6 @@
+//https://leetcode.cn/problems/min-cost-climbing-stairs/submissions/
+//第一步付费，即记录的当前的台阶i是已经付费，可以走1-2步了
+
 package main
 
 import "fmt"
