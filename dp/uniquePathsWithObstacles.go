@@ -16,7 +16,7 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 			dp[i][0] = 1
 		}
 
-		if(i==0) {
+		if(i==0) {//只初始化第一行，obstacleGrid[0]的小标也必须是0，不然会第一行的列值会在每一行被重复赋值，当n==0后，全部都变为0，导致初始化错误
 			for j := 0; j < len(obstacleGrid[0]); j++ {
 				if (obstacleGrid[0][j] == 1 || n == 0) {
 					dp[0][j] = 0
