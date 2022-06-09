@@ -1,3 +1,5 @@
+//https://leetcode.cn/problems/last-stone-weight-ii/submissions/
+
 package main
 
 import (
