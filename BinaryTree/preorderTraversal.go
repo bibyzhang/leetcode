@@ -1,3 +1,5 @@
+//https://leetcode.cn/problems/binary-tree-preorder-traversal/
+//前序遍历 中->左->右
 package main
 
 import "fmt"
