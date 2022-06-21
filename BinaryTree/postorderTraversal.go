@@ -1,5 +1,6 @@
 //https://leetcode.cn/problems/binary-tree-postorder-traversal/
 //后序遍历 左->右->中
+//递归法
 package main
 
 import "fmt"
